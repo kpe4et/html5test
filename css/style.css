@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "Raleway"; 
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+
+body {
+    margin: 0;
+}
+
+.head {
+    background: no-repeat url(../img/head_bg.jpg);
+    background-size: 100%;
+}
+
+.top-menu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 40px 100px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    text-decoration: none;
+    color: #fff;
+    height: 56px;
+}
+
+.logo-svg {
+    fill: currentColor;
+}
+
+.logo-txt {
+    font-family: Raleway;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    text-align: right;
+}
+
+.logo:hover, .logo-txt:hover {
+  color: #998675;
+}
+
+.nav-top-menu {
+    margin: 20px 0 0 0;
+}
+
+.nav-top-menu-items {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav-top-menu-items:hover {
+    color: #c7b299;
+}
+
+.top-menu-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart {
+    display: block;
+    background: no-repeat url("../img/cart.svg"); 
+    width: 25px;
+    height: 24px;
+    outline: none;
+    background-size: contain;
+    background-position: center;
+    margin: 14px 15px 0 0;
+}
+
+.cart:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.form {
+    width: 200px;
+    margin: 15px 0 0 0;
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background: no-repeat url("../img/search.svg");
+    background-size: contain;
+    border: none;
+}
+
+.search:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.search:focus {
+    width: 200px;
+    transition: width is easy-out;
+    background-position: right;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.search::-ms-clear {  display: none; width : 0; height: 0; }
+.search::-ms-reveal {  display: none; width : 0; height: 0; }
+.search::-webkit-search-decoration,
+.search::-webkit-search-cancel-button,
+.search::-webkit-search-results-button,
+.search::-webkit-search-results-decoration { display: none; }
+
+
+.headblock {
+    width: 100%;
+    min-height: 490px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 4;
+}
+
+.slider {
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    border: none;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    align-self: center;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+#right {
+    transform: rotate(135deg);
+}
+
+.slider:hover {
+    border-top: 2px solid #FF9B40;
+    border-left: 2px solid #FF9B40;
+}
+
+.title {
+    width: 589px;
+    font-family: Raleway;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.title-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.title-product {
+    font-size: 52px;
+    font-weight: 800;
+    margin: 14px 0 19px 0;
+}
+
+.title-description {
+    font-size: 16px;
+    font-weight: 300; 
+    line-height: 24px;
+}
+
+.title-btn {
+    margin: 52px auto 0 auto;
+/*
+    text-decoration: none;
+    display: block;
+    width: 170px;
+    min-height: 53px;
+    background-color: #998675;
+    border-radius: 3.0px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+}
+
+/*
+.title-btn-txt {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 53px;
+лайнхейт читерно как-то, пусть будет флекс
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.title-btn:hover {
+    background-color: #FF9B40;
+    -webkit-box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+    -moz-box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+    box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+}
+
+.title-btn:active {
+    background-color: #000;
+    -webkit-box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+    -moz-box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+    box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+}
+поздно уже, проще пока нижним классом, а тут оставить маржин
+*/
+
+.pagination {
+    width: 100%;
+    align-self: flex-end;
+    margin: 0 0 42px 0;
+}
+
+.pagination-box {
+    margin: 0 auto;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-button {
+    display: block;
+    width: 11px;
+    height: 11px;
+    opacity: 0.5;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.pagination-button:hover {
+    background-color: #FF9B40;
+    opacity: 1;
+    transform: scale(1.2);
+    border: 2px solid #ccc;
+}
+
+.service {
+    padding: 80px 177px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-box {
+    width: 266px;
+    text-align: center;
+    color: #555555;
+    fill: #555555;
+    border-bottom: 3px solid rgba(199,178,153, .5);
+}
+
+.service-box:hover {
+    fill: #c7b299;
+    border-bottom: 3px solid #c7b299;
+}
+
+.service-box-title {
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+
+.service-box:hover .service-box-title {
+    color: #c7b299;
+}
+
+.service-box-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.template {
+    padding: 0 100px;
+    background-color: #fbfaf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.template-title {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+
+.teplate-text {
+    width: 757px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.template-img {
+    width: 100%;
+    min-height: 482px;
+    background-image: url('../img/template_main.jpg'), url('../img/template_left.jpg'), url('../img/template_right.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom, 30% bottom, 70% bottom; 
+/*    тут я не понял, как правильно прикрутить нижние к главной, они в любом случае ж уедут?*/
+}
+
+.satisfaction {
+    background-color: #4e3427;
+    padding: 48px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.satisfaction-title {
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.satisfaction-brand {
+    color: #c7b299;
+}
+
+.satisfaction-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #615855;
+    margin: 0;
+}
+
+.push-me {
+    text-decoration: none;
+    width: 170px;
+    min-height: 50px;
+    background-color: #998675;
+    border-radius: 3.0px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.push-me {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.push-me:hover {
+    background-color: #FF9B40;
+    -webkit-box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+    -moz-box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+    box-shadow: 0px 0px 23px -1px rgba(107,146,255,0.82);
+}
+
+.push-me:active {
+    background-color: #000;
+    -webkit-box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+    -moz-box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+    box-shadow: 0px 0px 48px 10px rgba(107,146,255,0.82);
+}
