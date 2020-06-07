@@ -350,7 +350,10 @@ body {
 }
 
 .touch-me {
+
     font-family: 'raleway-regular', 'arial', sans-serif;
+=======
+
     font-size: 14px;
     line-height: 23px;
     font-weight: 800;
