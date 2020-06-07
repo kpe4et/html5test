@@ -118,6 +118,14 @@ body {
     fill: currentColor;
 }
 
+.p-main {
+    font-family: 'montserrat', 'arial', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
 .logo-txt {
     font-family: 'raleway', 'arial', sans-serif;
     font-size: 34px;
@@ -136,9 +144,7 @@ body {
 }
 
 .nav-top-menu-items {
-    font-family: 'montserrat', 'arial', sans-serif;
     font-size: 14px;
-    font-weight: 300;
     color: #ffffff;
     text-transform: capitalize;
     margin: 0 10px;
@@ -256,10 +262,8 @@ body {
 }
 
 .title-description {
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    font-weight: 300; 
     line-height: 24px;
+    color: #ffffff;
 }
 
 .title-btn {
@@ -329,16 +333,16 @@ body {
     width: 60px;
     position: absolute;
     top: 226px;
-    left: 105px;
-    
-    
-    
+    left: 105px; 
 }
 
 .service-box:hover:after {
     border-bottom: 3px solid rgba(199,178,153, 1);;
 }
 
+.service-box-img {
+    height: 47px;
+}
 
 .service-box-title {
     font-family: 'raleway', 'arial', sans-serif;
@@ -353,11 +357,8 @@ body {
 }
 
 .service-box-text {
-    font-family: 'montserrat', 'arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 300;
-    color: #8c8c8c;
 }
 
 .template {
@@ -366,6 +367,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .template-title {
@@ -374,16 +376,12 @@ body {
     line-height: 1.2;
     font-weight: 600;
     color: #555555;
+    margin: 83px 0 24px 0;
 }
 
 .teplate-text {
     width: 757px;
-    text-align: center;
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #8c8c8c;
+    margin: 0 0 40px 0;
 }
 
 .template-img {
@@ -417,10 +415,8 @@ body {
 }
 
 .satisfaction-text {
-    font-family: 'montserrat', 'arial', sans-serif;
     font-size: 18px;
     line-height: 1.2;
-    font-weight: 300;
     color: #615855;
     margin: 0;
 }
@@ -466,21 +462,7 @@ body {
     align-items: center;
 }
 
-.examples-title {
-    font-family: 'raleway', 'arial', sans-serif;
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 600;
-    color: #555555;
-    margin: 81px 0 24px 0;
-}
-
 .examples-text {
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #8c8c8c;
     width: 757px;
     text-align: center;
     margin: 0; 
@@ -639,13 +621,6 @@ body {
     background-color: #998675;
     border-radius: 3px;
     border: transparent;
-    font-family: 'raleway', 'arial', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 23px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #ffffff;
     width: 170px;
     outline: none;
 }
@@ -686,10 +661,6 @@ body {
 }
 
 .video-description {
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
     color: #ffffff;
     width: 552px;
 }
@@ -741,14 +712,6 @@ body {
     margin: 0;
 }
 
-.mobile-text {
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #8c8c8c;
-}
-
 .mobile-margin-text {
     margin: 40px 0 45px 0;    
 }
@@ -767,7 +730,7 @@ body {
     content: "\203A";
     color: #fff;
     text-align: center;
-    line-height: 18px;
+    line-height: 20px;
     display: block;
     width: 21px;
     height: 21px;
@@ -827,20 +790,10 @@ body {
 }
 
 .recent-title {
-    font-family: 'raleway', 'arial', sans-serif;
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 600;
-    color: #555555;
     margin: 0 0 30px 0;
 }
 
 .recent-text {
-    font-family: 'montserrat', 'arial', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 300;
-    color: #8c8c8c;
     width: 757px;
     text-align: center;
     margin: 0 0 30px 0;
