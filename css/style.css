@@ -434,10 +434,14 @@ body {
 }
 
 .touch-me {
+<<<<<<< HEAD
 
     font-family: 'raleway', 'arial', sans-serif;
 
 
+=======
+    font-family: 'raleway', 'arial',sans-serif;
+>>>>>>> 56ba7af... dsd
     font-size: 14px;
     line-height: 23px;
     font-weight: 800;
