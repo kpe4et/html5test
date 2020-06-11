@@ -116,6 +116,7 @@ body {
 
 .logo-svg {
     fill: currentColor;
+    
 }
 
 .p-main {
@@ -154,10 +155,15 @@ body {
     text-transform: capitalize;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .nav-top-menu-items:hover {
     color: #c7b299;
+}
+
+.nav-top-menu-items:active {
+    color: #FF9B40;
 }
 
 .top-menu-right {
@@ -178,15 +184,41 @@ body {
 }
 
 .cart:hover {
-    border-bottom: 2px solid #fff;
+    background-image: url("../img/cart_hover.svg");
+}
+
+.cart:active {
+    background-image: url("../img/cart_active.svg");
 }
 
 .form {
     width: 200px;
     margin: 15px 0 0 0;
+    position: relative;
 }
 
 .search {
+    width: 0;
+    min-height: 0;
+    padding: 5px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 40px;
+    left: -172px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'montserrat', 'arial', sans-serif;
+    text-transform: capitalize;
+}
+
+.search_ico {
+    content: "";
+    display: block;
     width: 24px;
     height: 24px;
     outline: none;
@@ -195,16 +227,18 @@ body {
     border: none;
 }
 
-.search:hover {
-    border-bottom: 2px solid #fff;
+.search_ico:hover {
+    background-image: url("../img/search_hover.svg");
+}
+
+.search_ico:active {
+    background-image: url("../img/search_active.svg");
 }
 
 .search:focus {
-    background-position: right;
-    color: #fff;
-    border: 1px solid #fff;
-    transition: width 1s ease;
     width: 200px;
+    transition: width 1s ease;
+    border: 1px solid #c7b299;
 }
 
 .search::-ms-clear {  display: none; width : 0; height: 0; }
@@ -244,6 +278,12 @@ body {
 .slider:hover {
     border-top: 2px solid #FF9B40;
     border-left: 2px solid #FF9B40;
+    transition: border-color 0.2s;
+}
+
+.slider:active {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
 }
 
 .title {
@@ -298,6 +338,7 @@ body {
     border-radius: 50%;
     border: 2px solid transparent;
     outline: none;
+    transition: background-color 0.2s;
 }
 
 .pagination-button:hover {
@@ -307,8 +348,8 @@ body {
     border: 2px solid #ccc;
 }
 
-.pagination-button:focus {
-    background-color: #FF9B40;
+.pagination-button:active {
+    background-color: #000;
     opacity: 1;
     transform: scale(1.2);
     border: 2px solid #ccc;
@@ -329,6 +370,7 @@ body {
     text-align: center;
     color: #555555;
     fill: #555555;
+    transition: color 0.2s;
 }
 
 .service-box:hover {
@@ -356,6 +398,7 @@ body {
     line-height: 1.2;
     font-weight: 600;
     color: #555555;
+    transition: color 0.2s;
 }
 
 .service-box:hover .service-box-title {
@@ -436,6 +479,7 @@ body {
     outline: none;
     display: flex;
     justify-content: center;
+    transition: background-color 0.2s;    
     align-items: center;
 }
 
@@ -489,6 +533,7 @@ body {
     border-radius: 3.0px;
     padding: 10px 24px; 
     text-decoration: none;
+    transition: background-color 0.2s;
 }
 
 .examples-menu-item-text {
@@ -496,6 +541,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     color: #8c8c8c;
+    transition: color 0.2s;
 }
 
 .examples-menu-item:hover {
@@ -504,6 +550,14 @@ body {
 
 .examples-menu-item:hover .examples-menu-item-text {
     color: #ffffff;
+}
+
+.examples-menu-item:active {
+    background-color: #000; 
+}
+
+.examples-menu-item:active .examples-menu-item-text {
+    color: #FF9B40;
 }
 
 .article {
@@ -526,6 +580,7 @@ body {
 
 .article-image {
     display: block;
+    transition: filter 0.2s;
 }
 
 .article-block-item:hover .article-image {
@@ -536,6 +591,7 @@ body {
     background-color: #fbfaf8;
     padding: 30px;
     position: relative;
+    transition: background-color 0.2s;
 }
 
 .article-txt-wrp:before {
@@ -563,6 +619,7 @@ body {
     color: #c7b299;
     display: inline-block;
     width: 100%;
+    transition: color 0.2s;
 }
 
 .article-txt {
@@ -570,6 +627,7 @@ body {
     line-height: 20px;
     font-weight: 300;
     color: #d1d1d1;
+    transition: color 0.2s;
 }
 
 .article-block-item:hover .article-title {
@@ -593,6 +651,7 @@ body {
     left: 38%;
     background-image: url("../img/article_link.svg");
     display: none;
+    outline: none;
 }
 
 .article-block-item:hover .article-btn-link {
@@ -603,11 +662,16 @@ body {
     background-image: url("../img/article_link_hover.svg");
 }
 
+.article-block-item:hover .article-btn-link:active {
+    background-image: url("../img/article_link_active.svg");
+}
+
 .article-btn-search {
     top: 30%;
     left: 56%; 
     background-image: url("../img/article_search.svg");
     display: none;
+    outline: none;
 }
 
 .article-block-item:hover .article-btn-search {
@@ -616,6 +680,10 @@ body {
 
 .article-block-item:hover .article-btn-search:hover {
     background-image: url("../img/article_search_hover.svg");
+}
+
+.article-block-item:hover .article-btn-search:active {
+    background-image: url("../img/article_search_active.svg");
 }
 
 .article-block-item:nth-last-child(2) {
@@ -629,11 +697,18 @@ body {
     border: transparent;
     width: 170px;
     outline: none;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .load-articles:hover {
     color: #998675;
     background-color: #fff;
+    border: 1px solid #998675;
+}
+
+.load-articles:active {
+    color: #FF9B40;
+    background-color: #000;
     border: 1px solid #998675;
 }
 
@@ -818,11 +893,13 @@ body {
 
 .recent-block-img {
     display: block;
+    transition: filter 0.3s;
 }
 
 .recent-block-wrp {
     padding: 30px;
     border: 1px solid #f8f8f8;
+    transition: background-color 0.2s, border 0.2s;
 }
 
 .recent-block-title {
@@ -834,6 +911,7 @@ body {
     display: inline-block;
     width: 100%;
     margin: 0 0 19px 0;
+    transition: color 0.2s;
 }
 .recent-block-text {
     font-family: 'montserrat', 'arial', sans-serif;
@@ -844,6 +922,7 @@ body {
     display: inline-block;
     width: 100%;
     margin: 0 0 27px 0;
+    transition: color 0.2s;
 }
 
 .recent-block-link {
@@ -854,10 +933,15 @@ body {
     color: #c7b299;
     text-transform: capitalize;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .recent-block-link:hover {
     color: #ccc;
+}
+
+.recent-block-link:active {
+    color: #FF9B40;
 }
 
 .recent-block-item:hover .recent-block-img {
@@ -889,11 +973,17 @@ body {
     line-height: 17px;
     border-radius: 50%;
     outline: none;
+    transition: color 0.2s, border 0.2s;
 }
 
 .recent-pagination-button:hover {
     color: rgba(199, 178, 153, 1);
     border: 2px solid rgba(199, 178, 153, 1);
+}
+
+.recent-pagination-button:active {
+    color: #FF9B40;
+    border: 2px solid #FF9B40;
 }
 
 .recent-img-pag {
@@ -921,6 +1011,7 @@ body {
     color: #ffffff;
     display: block;
     line-height: 35px;
+    transition: background-color 0.4s;
 }
 
 .month {
@@ -935,6 +1026,7 @@ body {
     color: #ffffff;
     display: block;
     line-height: 25px;
+    transition: background-color 0.5s;
 }
 
 .recent-block-item:hover .day {
@@ -957,6 +1049,7 @@ body {
 
 .brands-img {
     margin: 0 45px;
+    transition: filter 0.4s;
 }
 
 .brands-img:hover {
@@ -991,6 +1084,7 @@ body {
     color: #d1d1d1;
     text-transform: capitalize;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .footer-read:hover {
@@ -1003,6 +1097,7 @@ body {
 
 .footer-links {
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .footer-links:hover {
@@ -1038,6 +1133,7 @@ body {
     color: #363636;
     width: 100%;
     display: block;
+    transition: color 0.2s;
 }
 
 .footer-posts-text {
@@ -1066,6 +1162,7 @@ body {
 .soc-text {
     color: #00bff3;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .soc-text:hover {    
@@ -1078,6 +1175,10 @@ body {
 
 .dribbble-img-box {
     width: 270px;
+}
+
+.dribbble-img {
+    transition: filter 0.2s;
 }
 
 .dribbble-img:hover {
@@ -1093,11 +1194,12 @@ body {
     background-color: #111111;
     padding: 45px 0 51px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .bottom-footer-rights:first-child {
     display: flex;
+    margin-right: 449px;
 }
 
 .footer-rigts-text {
@@ -1121,6 +1223,7 @@ body {
 .footer-rights-link {
     color: #959595;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .footer-rights-link:hover {
@@ -1135,6 +1238,7 @@ body {
     text-decoration: none;
     padding: 0 10px;
     border-left: 1px solid #252525;
+    transition: color 0.2s;
 }
 
 .bottom-footer-menu-item:hover {
