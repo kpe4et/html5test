@@ -316,10 +316,13 @@ body {
 
 .service-box {
     width: 266px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     color: #555555;
     fill: #555555;
-    position: relative;
 }
 
 .service-box:hover {
@@ -331,9 +334,6 @@ body {
     display: block;
     border-bottom: 3px solid rgba(199,178,153, .5);
     width: 60px;
-    position: absolute;
-    top: 226px;
-    left: 105px; 
 }
 
 .service-box:hover:after {
@@ -937,4 +937,29 @@ body {
 
 .recent-block-item:hover .month {
     background-color: #a48d72;
+}
+
+.brands {
+    width: 100%;
+    background: no-repeat url("../img/prefooter.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 139px 0;
+}
+
+.brands-img {
+    margin: 0 45px;
+}
+
+.brands-img:hover {
+    filter: brightness(60%);
+}
+
+@media only screen and (max-width: 1920px) {
+    .body {
+        width: 1920px;
+        margin: 0 auto;
+    }
 }
