@@ -1153,7 +1153,7 @@ body {
 
 .footer-split {
     border: none;
-    color: 252525;
+    color: #252525;
     height: 2px;
     background-color: #252525;
     margin: 11px 0;
@@ -1182,11 +1182,11 @@ body {
 }
 
 .dribbble-img:hover {
-    filter: brightness(66%)
+    filter: brightness(66%);
 }
 
 .dribbble-img:active {
-    filter: brightness(33%)
+    filter: brightness(33%);
 }
 
 .bottom-footer {
